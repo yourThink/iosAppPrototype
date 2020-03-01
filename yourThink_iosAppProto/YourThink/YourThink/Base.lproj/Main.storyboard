@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jT0-Bn-X0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4078.2608695652175" y="97.767857142857139"/>
+            <point key="canvasLocation" x="3209" y="98"/>
         </scene>
         <!--나의 생각들-->
         <scene sceneID="RZS-Ny-Nxy">
@@ -91,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mWA-VY-YRL">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="676"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleCell" textLabel="DXB-NA-JP7" style="IBUITableViewCellStyleDefault" id="WgB-sv-Myy">
@@ -147,13 +147,26 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oB-7X-s5w">
+                                <rect key="frame" x="0.0" y="764" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem systemItem="trash" id="Ldn-p1-S9V">
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JQh-tf-GDp"/>
+                                    <barButtonItem systemItem="compose" id="H9o-7B-V0A"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="mWA-VY-YRL" firstAttribute="top" secondItem="UD3-vq-7f6" secondAttribute="top" id="0T3-PH-37d"/>
-                            <constraint firstItem="mWA-VY-YRL" firstAttribute="trailing" secondItem="UD3-vq-7f6" secondAttribute="trailing" id="G0s-V9-AAC"/>
-                            <constraint firstItem="mWA-VY-YRL" firstAttribute="leading" secondItem="UD3-vq-7f6" secondAttribute="leading" id="lBr-tj-uMY"/>
-                            <constraint firstAttribute="bottom" secondItem="mWA-VY-YRL" secondAttribute="bottom" id="p1l-rh-wHD"/>
+                            <constraint firstItem="1oB-7X-s5w" firstAttribute="bottom" secondItem="UD3-vq-7f6" secondAttribute="bottom" id="JKP-Qu-LAW"/>
+                            <constraint firstItem="mWA-VY-YRL" firstAttribute="trailing" secondItem="UD3-vq-7f6" secondAttribute="trailing" id="QLV-xo-2Kt"/>
+                            <constraint firstItem="1oB-7X-s5w" firstAttribute="top" secondItem="mWA-VY-YRL" secondAttribute="bottom" id="adn-uS-5o7"/>
+                            <constraint firstItem="mWA-VY-YRL" firstAttribute="top" secondItem="UD3-vq-7f6" secondAttribute="top" id="ane-7O-yHX"/>
+                            <constraint firstItem="1oB-7X-s5w" firstAttribute="leading" secondItem="UD3-vq-7f6" secondAttribute="leading" id="n3I-0r-fvc"/>
+                            <constraint firstItem="mWA-VY-YRL" firstAttribute="leading" secondItem="UD3-vq-7f6" secondAttribute="leading" id="s8R-GE-PIR"/>
+                            <constraint firstItem="1oB-7X-s5w" firstAttribute="trailing" secondItem="UD3-vq-7f6" secondAttribute="trailing" id="uzr-qz-u0R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UD3-vq-7f6"/>
                     </view>
@@ -161,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYF-bw-hp1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1426" y="98"/>
+            <point key="canvasLocation" x="1424.6376811594205" y="97.767857142857139"/>
         </scene>
         <!--새로운 생각-->
         <scene sceneID="ats-D2-82Z">
@@ -220,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMH-Mi-ee4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5872.4637681159429" y="97.767857142857139"/>
+            <point key="canvasLocation" x="4177" y="98"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kLC-Ze-0l8">
