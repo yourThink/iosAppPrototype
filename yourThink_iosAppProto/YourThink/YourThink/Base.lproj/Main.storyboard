@@ -27,7 +27,7 @@
         <!--나의 생각들-->
         <scene sceneID="RZS-Ny-Nxy">
             <objects>
-                <viewController id="ZbY-ZK-JHr" sceneMemberID="viewController">
+                <viewController id="ZbY-ZK-JHr" customClass="MemoListTableViewController" customModule="YourThink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PDy-xz-bYi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,15 +77,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="thinkCellTableView" destination="iOr-Iu-YIR" id="xKq-dd-zqB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Y5-M6-xtM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="468.11594202898556" y="97.767857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="7in-Pe-1AF">
             <objects>
-                <viewController id="3RW-eL-Htv" sceneMemberID="viewController">
+                <viewController id="3RW-eL-Htv" customClass="DetailViewController" customModule="YourThink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aRu-jI-Nck">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,6 +174,9 @@
                         <viewLayoutGuide key="safeArea" id="UD3-vq-7f6"/>
                     </view>
                     <navigationItem key="navigationItem" id="vQt-Vm-BT8"/>
+                    <connections>
+                        <outlet property="thinkTableView" destination="mWA-VY-YRL" id="r4i-nc-wCA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYF-bw-hp1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,7 +185,7 @@
         <!--새로운 생각-->
         <scene sceneID="ats-D2-82Z">
             <objects>
-                <viewController id="0es-f7-U1t" sceneMemberID="viewController">
+                <viewController id="0es-f7-U1t" customClass="ComposeViewController" customModule="YourThink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qib-dO-b89">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,9 +217,21 @@
                         <viewLayoutGuide key="safeArea" id="eQH-XV-rmv"/>
                     </view>
                     <navigationItem key="navigationItem" title="새로운 생각" id="950-qC-uIG">
-                        <barButtonItem key="leftBarButtonItem" title="취소" id="1Yr-5l-xn5"/>
-                        <barButtonItem key="rightBarButtonItem" title="저장" id="ge4-gX-IfA"/>
+                        <barButtonItem key="leftBarButtonItem" title="취소" id="1Yr-5l-xn5">
+                            <connections>
+                                <action selector="closeWrite:" destination="0es-f7-U1t" id="5mv-Be-VUq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="저장" id="ge4-gX-IfA">
+                            <connections>
+                                <action selector="saveWrite:" destination="0es-f7-U1t" id="hON-HQ-pzb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="thinkTitleField" destination="QY3-r4-yLG" id="Mt3-iS-Lma"/>
+                        <outlet property="thinkmemoTextView" destination="2Dy-Cl-Swy" id="RSx-SJ-GCF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X3W-UF-NR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,7 +275,6 @@
         <!--Navigation Controller-->
         <scene sceneID="jcl-AE-e6B">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IJ4-HI-6eB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ArD-mi-3X0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Efy-Ix-aVx"/>
@@ -270,6 +287,7 @@
                         <segue destination="0es-f7-U1t" kind="relationship" relationship="rootViewController" id="Kd5-pN-Nu5"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IJ4-HI-6eB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-442" y="874"/>
         </scene>
