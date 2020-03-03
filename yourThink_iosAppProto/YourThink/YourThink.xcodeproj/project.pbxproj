@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		761E5E45240D28B900F1FC89 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E5E44240D28B900F1FC89 /* DataManager.swift */; };
-		761E5E47240D2A0600F1FC89 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E5E46240D2A0600F1FC89 /* MemoListTableViewController.swift */; };
+		761E5E47240D2A0600F1FC89 /* ThinkListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E5E46240D2A0600F1FC89 /* ThinkListTableViewController.swift */; };
 		761E5E49240D2A3900F1FC89 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E5E48240D2A3900F1FC89 /* DetailViewController.swift */; };
 		761E5E4B240D2AA200F1FC89 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E5E4A240D2AA200F1FC89 /* ComposeViewController.swift */; };
 		761E5E4D240D2AFA00F1FC89 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E5E4C240D2AFA00F1FC89 /* UIViewController+Alert.swift */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		761E5E44240D28B900F1FC89 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		761E5E46240D2A0600F1FC89 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
+		761E5E46240D2A0600F1FC89 /* ThinkListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkListTableViewController.swift; sourceTree = "<group>"; };
 		761E5E48240D2A3900F1FC89 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		761E5E4A240D2AA200F1FC89 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		761E5E4C240D2AFA00F1FC89 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 				761E5E48240D2A3900F1FC89 /* DetailViewController.swift */,
 				761E5E4A240D2AA200F1FC89 /* ComposeViewController.swift */,
 				761E5E4C240D2AFA00F1FC89 /* UIViewController+Alert.swift */,
-				761E5E46240D2A0600F1FC89 /* MemoListTableViewController.swift */,
+				761E5E46240D2A0600F1FC89 /* ThinkListTableViewController.swift */,
 				763C591B2407D87400A73D14 /* Assets.xcassets */,
 				763C591D2407D87400A73D14 /* LaunchScreen.storyboard */,
 				763C59202407D87400A73D14 /* Info.plist */,
@@ -163,7 +163,7 @@
 			files = (
 				763C59102407D87300A73D14 /* AppDelegate.swift in Sources */,
 				761E5E45240D28B900F1FC89 /* DataManager.swift in Sources */,
-				761E5E47240D2A0600F1FC89 /* MemoListTableViewController.swift in Sources */,
+				761E5E47240D2A0600F1FC89 /* ThinkListTableViewController.swift in Sources */,
 				761E5E49240D2A3900F1FC89 /* DetailViewController.swift in Sources */,
 				763C59122407D87300A73D14 /* SceneDelegate.swift in Sources */,
 				763C591A2407D87300A73D14 /* YourThink.xcdatamodeld in Sources */,

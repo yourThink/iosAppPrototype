@@ -47,37 +47,35 @@ class DetailViewController: UIViewController {
         
         
         
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if let vc = segue.destination.children.first as? ComposeViewController{
-                vc.editTarget = memo
-            }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination.children.first as? ComposeViewController{
+            vc.editTarget = memo
         }
+    }
 
-        var token: NSObjectProtocol?
-        deinit {
-            if let token = token {
-                NotificationCenter.default.removeObserver(token)
-            }
+    var token: NSObjectProtocol?
+    deinit {
+        if let token = token {
+            NotificationCenter.default.removeObserver(token)
         }
+    }
         
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            token = NotificationCenter.default.addObserver(forName: ComposeViewController.memoDidChange, object: nil, queue: OperationQueue.main, using: {[weak self ] (noti) in self?.thinkTableView.reloadData()})
-
-        }
-
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        token = NotificationCenter.default.addObserver(forName: ComposeViewController.memoDidChange, object: nil, queue: OperationQueue.main, using: {[weak self ] (noti) in self?.thinkTableView.reloadData()})
     }
 
 
-    extension DetailViewController: UITableViewDataSource {
+}
+
+
+extension DetailViewController: UITableViewDataSource {
         
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return 3
+    }
         
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 4
-        }
-        
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             switch indexPath.row {
             case 0:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)

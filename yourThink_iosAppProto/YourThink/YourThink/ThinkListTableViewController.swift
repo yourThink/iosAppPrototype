@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MemoListTableViewController: UITableViewController {
+class ThinkListTableViewController: UITableViewController {
 
      let formatter: DateFormatter = {
         let f = DateFormatter()
@@ -56,9 +56,8 @@ class MemoListTableViewController: UITableViewController {
         
     @IBOutlet weak var thinkCellTableView: UITableView!
     
-    
-    
-// MARK: - Table view data source
+
+    // MARK: - Table view data source
 
      override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
          // 이 메소드를 통해 몇개의 테이블 뷰를 호출할지
@@ -68,7 +67,7 @@ class MemoListTableViewController: UITableViewController {
      
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          // 개별 셀을 화면에 호출할때 마다 반복적을 호출된다!, IndexPath가 몇번째 셀인지
-         let cell = tableView.dequeueReusableCell(withIdentifier: "thinkCellTableView", for: indexPath)
+         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
          // indexpath 의 row 데이터에 몇번째 쎌인지 알 수 있다.
          let target = DataManager.shared.memoList[indexPath.row]
          
